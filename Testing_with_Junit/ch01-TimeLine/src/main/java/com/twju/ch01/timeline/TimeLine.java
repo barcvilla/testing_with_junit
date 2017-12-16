@@ -9,14 +9,17 @@ package com.twju.ch01.timeline;
  *
  * @author barcvilla
  */
-public class TimeLine {
+public class TimeLine 
+{
+    private int fetchCount;
+    
     public void setFetchCount(int fetchCount)
     {
-        
+        this.fetchCount = fetchCount;
     }
     
     public int getFetchCount()
     {
-        return 0;
+        return fetchCount;
     }
 }

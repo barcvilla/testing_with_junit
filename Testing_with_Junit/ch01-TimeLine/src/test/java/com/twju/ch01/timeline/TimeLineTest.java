@@ -5,6 +5,7 @@
  */
 package com.twju.ch01.timeline;
 
+import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 /**
@@ -20,7 +21,11 @@ public class TimeLineTest
         * Para probar al componente TimeLine, creamos una variable local que toma una nueva instancia de este componente
         */
         TimeLine timeLine = new TimeLine();
-        timeLine.setFetchCount(5);
+        int expected = 5;
+        
+        timeLine.setFetchCount(expected);
         int actual = timeLine.getFetchCount();
+        
+        assertEquals(expected, actual);
     }
 }
