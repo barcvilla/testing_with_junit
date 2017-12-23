@@ -13,7 +13,7 @@ import static org.junit.Assert.assertTrue;
  *
  * @author barcvilla
  */
-public class TimeLineTest 
+public class Listing_2_InlineSetup_TimeLineTest 
 {
     private final static  int NEW_FETCH_COUNT = new TimeLine().getFetchCount() + 1;
     
@@ -25,6 +25,9 @@ public class TimeLineTest
         assertEquals(NEW_FETCH_COUNT, timeLine.getFetchCount());
     }
     
+    /**
+     * Verificamos el valor inicial del metodo getFetchCount > 0
+     */
     @Test
     public void initialState()
     {
