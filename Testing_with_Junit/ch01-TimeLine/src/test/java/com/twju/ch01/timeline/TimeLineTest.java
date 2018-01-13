@@ -26,6 +26,7 @@ public class TimeLineTest
         timeLine.setFetchCount(expected);
         int actual = timeLine.getFetchCount();
         
+        // assertEquals() afirma que dos valores u objetos son iguales
         assertEquals(expected, actual);
     }
 }
