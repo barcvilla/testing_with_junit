@@ -34,4 +34,10 @@ public class Listing_2_InlineSetup_TimeLineTest
         TimeLine timeLine = new TimeLine();
         assertTrue(timeLine.getFetchCount() > 0);
     }
+    
+    public static TimeLine createTimeLine()
+    {
+        return new TimeLine();
+    }
 }
+    
